@@ -1,6 +1,6 @@
 {
     "name": "@Namuho/namuho-types",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Types for namuho applications",
     "publishConfig": {
         "Namuho:registry": "https://npm.pkg.github.com"
