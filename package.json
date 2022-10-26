@@ -2,6 +2,9 @@
     "name": "@namuho/namuho-types",
     "version": "1.0.0",
     "description": "Types for namuho applications",
+    "publishConfig": {
+        "Namuho:registry": "https://npm.pkg.github.com"
+    },
     "main": "dist/index.js",
     "scripts": {
         "test": "exit 0",
