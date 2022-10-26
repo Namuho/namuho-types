@@ -1,5 +1,5 @@
 {
-    "name": "@namuho/namuho-types",
+    "name": "@Namuho/namuho-types",
     "version": "1.0.0",
     "description": "Types for namuho applications",
     "publishConfig": {
