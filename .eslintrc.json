@@ -13,6 +13,6 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["cdk", "prettier", "@typescript-eslint"],
+    "plugins": ["prettier", "@typescript-eslint"],
     "rules": {}
 }
