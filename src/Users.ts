@@ -10,6 +10,7 @@ export enum Genders {
 }
 
 export interface User {
+    email: string;
     firstName: string;
     lastName: string;
     country: Countries;
