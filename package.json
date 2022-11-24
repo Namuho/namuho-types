@@ -1,6 +1,6 @@
 {
     "name": "@namuho/namuho-types",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Types for namuho applications",
     "main": "dist/index.js",
     "scripts": {
