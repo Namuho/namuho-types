@@ -1,4 +1,4 @@
-export enum QuestionTypes {
+export enum QuestionCategories {
     NARROWING_DOWN_DATE = "NARROWING_DOWN_DATE",
     NARROWING_DOWN_MEETING = "NARROWING_DOWN_MEETING",
     NARROWING_DOWN_GROUP = "NARROWING_DOWN_GROUP",
@@ -16,10 +16,24 @@ export enum QuestionWeight {
     "FIVE" = 5,
 }
 
+export enum QuestionTypes {
+    TEXT = "TEXT",
+    RADIO = "RADIO",
+    NUMBER = "NUMBER",
+    RANGE = "RANGE",
+}
+
+export interface Answer {
+    value: string;
+    label: string;
+}
+
 export interface Question {
     questionId: string;
     internalName: string;
     isQuestionActive: boolean;
+    questionType: QuestionTypes;
+    answerOptions: Answer[];
 }
 
 export interface QuestionQuestionnaire extends Question {
@@ -27,10 +41,10 @@ export interface QuestionQuestionnaire extends Question {
     questionWeight: QuestionWeight;
     labelLow: string;
     labelHigh: string;
-    questionType: Omit<QuestionTypes, QuestionTypes.SECRET>;
+    questionCategory: Omit<QuestionCategories, QuestionCategories.SECRET>;
 }
 
 export interface QuestionSecret extends Question {
     questionLabel: string;
-    questionType: QuestionTypes.SECRET;
+    questionCategory: QuestionCategories.SECRET;
 }
